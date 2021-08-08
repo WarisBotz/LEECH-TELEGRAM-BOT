@@ -1,14 +1,6 @@
-![MAXX LEECH V2](https://telegra.ph/file/af8f0596124714a17e4e2.png)
+![WARIS LEECH V2]
 
 👉 [Orginal Repository](https://github.com/gautamajay52/TorrentLeech-Gdrive)
-
-![Maxx](https://telegra.ph/file/d18fa7fa33f26f733adb9.png)
-
-#<b>Don't Kill Heroku please ☹️</b>
-
-[![MAXX LEECH](https://telegra.ph/file/29d788a656dd517eafd0a.png)](https://telegram.dog/MaxxBots)
-
-
 
 # Benefits :-
     ✓ Google Drive link cloning using gclone.(wip)
@@ -28,8 +20,6 @@
     ✓ Renaming of Telegram files support added. 😐
     ✓ Changing rclone destination config on fly (By using `/rlcone` in private mode)
     ✓
-
-[![Maxx](https://telegra.ph/file/f3f3b950c2904756bb201.png)](https://t.me/MaxxRiderz) 👇
 
 ##### Mandatory Variables
 
@@ -123,5 +113,5 @@
 <p><a href="https://heroku.com/deploy?template=https://github.com/MaxxRider/Leech-Pro/tree/master)"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="200""/></a></p>
 
 
-[![MaxxRider](https://telegra.ph/file/aac59f2f35ee73b63019e.png)](https://telegram.dog/MaxxRiderz)
+[![WariAli]
 
