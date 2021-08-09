@@ -324,17 +324,17 @@ async def check_progress_for_dl(aria2, gid, event, previous_message):
                     pass
                 #
                 if is_file is None:
-                    msgg = f"<b>➩ Connections : {file.connections} </b>"
+                    msgg = f"<b>📡 Connections : {file.connections} </b>"
                 else:
-                    msgg = f"<b>➩ Info :- P: {file.connections} || S: {file.num_seeders} </b>\n\n<b>🗑️ GID :</b> <code>{gid}</code>"
-                msg = f"\n<b>📘 File Name :</b> `{downloading_dir_name}`\n\n<b>➩ Speed :</b> `{file.download_speed_string()}`"
-                msg += f"\n<b>➩ Size :</b> `{file.total_length_string()}`"
-                msg += f"\n<b>➩ Downloaded</b> : `{file.progress_string()}` \n<b>➩ ETA :</b> `{file.eta_string()}` \n {msgg}"
+                    msgg = f"<b>📋 Info :- P: {file.connections} || S: {file.num_seeders} </b>\n\n<b>🗑️ GID :</b> <code>{gid}</code>"
+                msg = f"\n<b>📝 File Name :</b> `{downloading_dir_name}`\n\n<b>➩ Speed :</b> `{file.download_speed_string()}`"
+                msg += f"\n<b>📂 Size :</b> `{file.total_length_string()}`"
+                msg += f"\n<b>✅ Downloaded</b> : `{file.progress_string()}` \n<b>➩ ETA :</b> `{file.eta_string()}` \n {msgg}"
                 inline_keyboard = []
                 ikeyboard = []
                 ikeyboard.append(
                     InlineKeyboardButton(
-                        " 🗑️ Cancel Process", callback_data=(f"cancel {gid}").encode("UTF-8")
+                        " ☣️ Cancel Process", callback_data=(f"cancel {gid}").encode("UTF-8")
                     )
                 )
                 inline_keyboard.append(ikeyboard)
@@ -369,11 +369,11 @@ async def check_progress_for_dl(aria2, gid, event, previous_message):
             await check_progress_for_dl(aria2, gid, event, previous_message)
         else:
             LOGGER.info(
-                f"<b> Leechd Successfully</b>: `{file.name} ({file.total_length_string()})` 🤒"
+                f"<b> Downloaded Successfully✅:</b>: `{file.name} ({file.total_length_string()})` 🥶"
             )
             await asyncio.sleep(EDIT_SLEEP_TIME_OUT)
             await event.edit(
-                f"<b>Leech Successfully</b>:\n\n📙 <b>File Name</b>: \n`{file.name}`\n\n📀 <b>Total Size</b>: `〘{file.total_length_string()}〙`"
+                f"<b>Downloaded Successfully✅:</b>:\n\n📝 <b>File Name</b>: \n`{file.name}`\n\n📁 <b>Total Size</b>: `{file.total_length_string()}`"
             )
             return True
     except aria2p.client.ClientException:

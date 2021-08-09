@@ -318,7 +318,7 @@ async def upload_single_file(
         message_for_progress_display = message
         if not edit_media:
             message_for_progress_display = await message.reply_text(
-                "<b>Trying to upload</b>\n\n📙<b> File Name</b>: <code>{}</code>".format(os.path.basename(local_file_name))
+                "<b>📤Starting Upload Of ➧ </b>\n <code>{}</code>".format(os.path.basename(local_file_name))
             )
             prog = Progress(from_user, client, message_for_progress_display)
         sent_message = await message.reply_document(
@@ -348,7 +348,7 @@ async def upload_single_file(
             message_for_progress_display = message
             if not edit_media:
                 message_for_progress_display = await message.reply_text(
-                    "<b>Trying to upload</b>\n\n📙<b> File Name</b>: <code>{}</code>".format(os.path.basename(local_file_name))
+                    "<b>📤 Starting Upload Of ➧ </b>\n <code>{}</code>".format(os.path.basename(local_file_name))
                 )
                 prog = Progress(from_user, client, message_for_progress_display)
             if local_file_name.upper().endswith(("MKV", "MP4", "WEBM", "M4V", "3GP")):
