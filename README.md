@@ -1,7 +1,3 @@
-![WARIS LEECH V2]
-
-👉 [Orginal Repository](https://github.com/gautamajay52/TorrentLeech-Gdrive)
-
 # Benefits :-
     ✓ Google Drive link cloning using gclone.(wip)
     ✓ Telegram File mirrorring to cloud along with its unzipping, unrar and untar
@@ -110,5 +106,5 @@
 <p><a href="https://heroku.com/deploy?template=https://github.com/MaxxRider/Leech-Pro/tree/master)"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="200""/></a></p>
 
 
-[WariAli]
+
 
